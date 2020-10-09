@@ -1,4 +1,4 @@
-FROM '123majumundur/php-7.3-nginx:cicd'
+FROM '123majumundur/php-7.1-nginx:cicd'
 LABEL maintainer="rizkavio21@gmail.com"
 
 # install prestissimo for faster deps installation
