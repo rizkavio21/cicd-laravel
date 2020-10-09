@@ -26,9 +26,8 @@ interaction
   - stage : "Build Docker Image"
     name : "Build Images Docker"
     script:
-    - echo "$DOCKER_PASSWORD" | docket login -u "$DOCKER_USERNAME"
---password-stdin
+    - echo "$DOCKER_PASSWORD" | docket login -u "$DOCKER_USERNAME" --password-stdin
     - docker build -t travis-ci-build-stages-demo .
     - docker images
     - docker tag travis-ci-build-stages-demo $DOCKER_USERNAME/cicd-laravel
-    -docker push $DOCKER_USERNAME/cicd-laravel
+    - docker push $DOCKER_USERNAME/cicd-laravel
