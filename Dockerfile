@@ -1,5 +1,5 @@
 FROM '123majumundur/php-7.1-nginx:cicd'
-MAINTAINER Rizka Vio <rizkvio21@gmail.com>
+MAINTAINER Robby Dwi <robbie.developer@gmail.com>
 
 #install pressimo for faster deps installation
 RUN composer global require hirak/prestissimo
