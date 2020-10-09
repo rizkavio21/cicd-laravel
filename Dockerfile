@@ -1,4 +1,4 @@
-FROM 'rizkavioo/php-7.1-nginx:cicd'
+FROM '123majumundur/php-7.1-nginx:cicd'
 MAINTAINER Rizka Vio <rizkvio21@gmail.com>
 
 #install pressimo for faster deps installation
